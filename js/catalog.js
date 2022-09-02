@@ -46,6 +46,7 @@ function addSelectedItemToCart() {
   const quantityId = document.getElementById('quantity');
   // TODO: using those, add one item to the Cart
   new CartItem(selectElement.value, quantityId.value);
+  
   Cart[0].push(CartItem);
   
 }
