@@ -7,12 +7,16 @@ const cart = new Cart([]);
 
 // On screen load, we call this method to put all of the product options
 // (the things in the Product.allProducts array) into the drop down list.
+//DONE!
 function populateForm() {
 
   //TODO: Add an <option> tag inside the form's select for each product
+  //DONE!
   const selectElement = document.getElementById('items');
   for (let i in Product.allProducts) {
-
+    let addOption = document.createElement('option');
+    addOption.innerHTML = Product.allProducts[i].name
+    selectElement.appendChild(addOption);
   }
 
 }
@@ -23,6 +27,8 @@ function populateForm() {
 function handleSubmit(event) {
 
   // TODO: Prevent the page from reloading
+  //DONE!
+  event.preventDefault();
 
   // Do all the things ...
   addSelectedItemToCart();
