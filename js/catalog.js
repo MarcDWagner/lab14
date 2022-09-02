@@ -63,15 +63,25 @@ function updateCounter() {
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
   // TODO: Get the item and quantity from the form
+  //DONE!
+  const selectElement = document.getElementById('items');
+  const quantityId = document.getElementById('quantity');
+  let cartContents = document.getElementById('cartContents');
   // TODO: Add a new element to the cartContents div with that information
+  //DONE!
+  let createLi = document.createElement('li');
+  createLi.innerHTML = '"'+selectElement.value+' '+quantityId.value+'"';
+  cartContents.appendChild(createLi);
 }
 
 // Set up the "submit" event listener on the form.
 // This is the trigger for the app. When a user "submits" the form, it will
 // Call that handleSubmit method above and kick off the whole process
+//DONE!
 const catalogForm = document.getElementById('catalog');
 catalogForm.addEventListener('submit', handleSubmit);
 
 // Before anything else of value can happen, we need to fill in the select
 // drop down list in the form.
+//DONE!!
 populateForm();
