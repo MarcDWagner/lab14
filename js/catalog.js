@@ -57,7 +57,7 @@ function addSelectedItemToCart() {
 //DONE!
 function updateCounter() { 
   let itemCount = document.getElementById('itemCount')
-  itemCount.innerHTML = '"'+cart.items.length+'"'
+  itemCount.innerHTML = ' :'+cart.items.length+''
 }
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
@@ -70,7 +70,7 @@ function updateCartPreview() {
   // TODO: Add a new element to the cartContents div with that information
   //DONE!
   let createLi = document.createElement('li');
-  createLi.innerHTML = '"'+selectElement.value+' '+quantityId.value+'"';
+  createLi.innerHTML = ''+selectElement.value+' '+quantityId.value+'';
   cartContents.appendChild(createLi);
 }
 

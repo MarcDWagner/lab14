@@ -1,1 +1,51 @@
 /* TODO: Make it awesome */
+
+body {
+  background-color: lightgoldenrodyellow;
+
+}
+body header h1 {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+header nav {
+  display: inline;
+  line-height: 30px;
+}
+
+header nav ul {
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  margin: 10px;
+}
+
+main header h1 {
+  color: blue;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 10px;
+  }
+
+  .copy {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px
+  }
+  legend {
+    margin: 0px 0px 10px 0px;
+  }
+
+  label {
+    font-weight: bold;
+
+  }
+
+  footer {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+  }
